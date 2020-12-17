@@ -4,46 +4,67 @@ using System.Text;
 
 namespace CapaLogica
 {
-   public class Utilidades
+    public class Utilidades
     {
-
         public static string getNombreDelMes(int mes)
         {
             string aux = "";
-            switch(mes)
+            switch (mes)
             {
                 case 1:
-                    aux = "Enero"; break;
+                    aux = "Enero";
+                    break;
                 case 2:
-                    aux = "Febrero"; break;
+                    aux = "Febrero";
+                    break;
                 case 3:
-                    aux = "Marzo"; break;
+                    aux = "Marzo";
+                    break;
                 case 4:
-                    aux = "Abril"; break;
+                    aux = "Abril";
+                    break;
                 case 5:
-                    aux = "Mayo"; break;
+                    aux = "Mayo";
+                    break;
                 case 6:
-                    aux = "Junio"; break;
+                    aux = "Junio";
+                    break;
                 case 7:
-                    aux = "Julio"; break;
+                    aux = "Julio";
+                    break;
                 case 8:
-                    aux = "Agosto"; break;
+                    aux = "Agosto";
+                    break;
                 case 9:
-                    aux = "Septiembre"; break;
+                    aux = "Septiembre";
+                    break;
                 case 10:
-                    aux = "Octubre"; break;
+                    aux = "Octubre";
+                    break;
                 case 11:
-                    aux = "Noviembre"; break;
+                    aux = "Noviembre";
+                    break;
                 case 12:
-                    aux = "Diciembre"; break;
-
+                    aux = "Diciembre";
+                    break;
                 default:
-                    aux = "MES NO VALIDO"; break;
-
-
-
-            }//fin del switch
+                    aux = "";
+                    break;
+            }// Fin switch
             return aux;
-        } 
+        }
+
+        public static Boolean Fecha(String fecha)
+        {
+            try
+            {
+                DateTime.Parse(fecha);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }

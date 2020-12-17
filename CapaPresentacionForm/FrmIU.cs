@@ -26,11 +26,21 @@ namespace CapaPresentacionForm
            
             double x = double.Parse(this.txtSaldoInicial.Text);
             this.txtResultado.Text = conta.getSaldos(x).ToString();
-
+z
 
             int numes = int.Parse(this.txtNumMes.Text);
             this.txtNombreMes.Text = CapaLogica.Utilidades.getNombreDelMes(numes);
 
+
+        }
+
+        private void FrmIU_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
     }

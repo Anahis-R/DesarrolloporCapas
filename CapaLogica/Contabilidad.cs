@@ -4,16 +4,17 @@ using System.Text;
 
 namespace CapaLogica
 {
-   public class Contabilidad
+    public class Contabilidad
     {
         public double getSaldos(double saldoInicial)
         {
             double aux = saldoInicial + 1000 + saldoInicial * 0.1;
             return aux;
         }
-        public string Saludos (string nombre="Juan Perez") //parametros opcionales
+
+        public string Saludos(string nombre = "Juan Pérez") // Parámetros opcionales
         {
-            return "Hola " + nombre + ", bienvenidos al Sistemas";
+            return "Hola " + nombre + ", bienvenido al sistema de contabilidad!";
         }
     }
 }
